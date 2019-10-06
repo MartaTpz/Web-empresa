@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<!-- Cabecera -->
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/ticket.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          
+          <span class="section-heading-upper">Benvinguts al cinema capri</span>
+        </h2>
+        <p class="mb-3">Veuen a veure les nostres pel·lícules
+        </p>
+        <p class="mb-3">
+          Preus:
+          <br><br>
+
+Dissabtes i feiners: 4,5€
+//
+Diumenges i festius: 5,30€ 
+<p>
+        <div class="intro-button mx-auto">
+          <a class="btn btn-primary btn-xl" href="{% url 'som' %}">Visita'ns</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mensaje -->
+
+{% endblock %}
